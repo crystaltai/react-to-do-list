@@ -1,0 +1,38 @@
+.form {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.input {
+  width: 400px;
+  padding: 8px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #a5b1c2;
+  font-family: 'Roboto';
+  color: #2c3a47;
+  font-size: 16px;
+}
+
+.add-button {
+  width: 100px;
+  padding: 8px;
+  font-size: 16px;
+  margin: 15px;
+  border: 2px solid #2bcbba;
+  border-radius: 5px;
+  outline: none;
+  background-color: #2bcbba;
+  color: white;
+  font-family: 'Roboto';
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  filter: brightness(95%);
+}
+
+.add-button:active {
+  filter: brightness(90%);
+}

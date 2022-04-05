@@ -1,0 +1,16 @@
+.task-item {
+  padding: 12px 15px;
+  border-bottom: 1px solid #a5b1c2;
+  text-align: left;
+  cursor: default;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-item:hover {
+  background-color: #f1f2f6;
+}
+
+.task-item-incomplete {
+  text-decoration: line-through;
+}
