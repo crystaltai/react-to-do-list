@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-to-do-list/static/css/main.26294bf6.css",
-    "main.js": "/react-to-do-list/static/js/main.53e64d97.js",
+    "main.css": "/react-to-do-list/static/css/main.98b8b401.css",
+    "main.js": "/react-to-do-list/static/js/main.195e1739.js",
     "static/media/roboto-latin-900italic.woff": "/react-to-do-list/static/media/roboto-latin-900italic.c20d916c1a1b094c1cec.woff",
     "static/media/roboto-latin-300italic.woff": "/react-to-do-list/static/media/roboto-latin-300italic.bd5b7a13f2c52b531a2a.woff",
     "static/media/roboto-latin-500italic.woff": "/react-to-do-list/static/media/roboto-latin-500italic.18d00f739ff1e1c52db1.woff",
@@ -27,11 +27,11 @@
     "static/media/roboto-latin-400.woff2": "/react-to-do-list/static/media/roboto-latin-400.176f8f5bd5f02b3abfcf.woff2",
     "static/media/roboto-latin-900.woff2": "/react-to-do-list/static/media/roboto-latin-900.870c8c1486f76054301a.woff2",
     "index.html": "/react-to-do-list/index.html",
-    "main.26294bf6.css.map": "/react-to-do-list/static/css/main.26294bf6.css.map",
-    "main.53e64d97.js.map": "/react-to-do-list/static/js/main.53e64d97.js.map"
+    "main.98b8b401.css.map": "/react-to-do-list/static/css/main.98b8b401.css.map",
+    "main.195e1739.js.map": "/react-to-do-list/static/js/main.195e1739.js.map"
   },
   "entrypoints": [
-    "static/css/main.26294bf6.css",
-    "static/js/main.53e64d97.js"
+    "static/css/main.98b8b401.css",
+    "static/js/main.195e1739.js"
   ]
 }
