@@ -8,11 +8,21 @@ import data from './data.json';
 function App() {
   const [toDoList, setToDoList] = useState(data);
 
+  const handleToggle = (id) => {
+    let mapped = toDoList.map((task) => {
+      if (task.id === Number(id)) {
+        task.complete = !task.complete;
+      }
+      return task;
+    });
+    setToDoList(mapped);
+  };
+
   return (
     <div className='app'>
       <FormHeader />
       <SubmitForm />
-      <TasksList toDoList={toDoList} />
+      <TasksList toDoList={toDoList} handleToggle={handleToggle} />
     </div>
   );
 }

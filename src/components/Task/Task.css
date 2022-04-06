@@ -11,6 +11,23 @@
   background-color: #f1f2f6;
 }
 
-.task-item-incomplete {
+.task-left {
+  display: flex;
+  cursor: pointer;
+}
+
+.task-item-complete {
   text-decoration: line-through;
+  color: #a5b1c2;
+}
+
+.complete-button {
+  color: #a5b1c2;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.fa-circle-xmark {
+  color: #ea8685;
+  cursor: pointer;
 }
