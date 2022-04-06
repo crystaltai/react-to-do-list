@@ -5,6 +5,7 @@
   cursor: default;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .task-item:hover {
@@ -30,4 +31,5 @@
 .fa-circle-xmark {
   color: #ea8685;
   cursor: pointer;
+  margin-left: 15px;
 }

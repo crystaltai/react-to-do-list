@@ -1,12 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'typeface-roboto';
 import './SubmitForm.css';
 
-const SubmitForm = () => {
+const SubmitForm = ({ addTask }) => {
+  const [userInput, setUserInput] = useState('');
+
+  // Handles the local state's change (every time user types in the input box, the state will change to reflect the most recent input)
+  const handleChange = (e) => {
+    setUserInput(e.currentTarget.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (userInput) {
+      addTask(userInput);
+      // Reset userInput back to empty string
+      setUserInput('');
+    }
+  };
+
   return (
     <div className='form'>
-      <form>
-        <input className='input' placeholder='Add Task' />
+      <form onSubmit={handleSubmit}>
+        <input
+          className='input-field'
+          placeholder='Add Task'
+          type='text'
+          value={userInput}
+          onChange={handleChange}
+        />
         <button className='add-button' type='submit'>
           Add
         </button>
