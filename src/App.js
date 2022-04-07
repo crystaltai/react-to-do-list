@@ -28,11 +28,10 @@ function App() {
 
   // Delete todo item
   const handleDelete = (index) => {
-    const updatedDelete = [...toDoList];
+    let copyTasks = [...toDoList];
     console.log(index);
-    updatedDelete.splice(index, 1);
-    console.log(updatedDelete);
-    setToDoList(updatedDelete);
+    copyTasks.splice(index, 1);
+    setToDoList(copyTasks);
   };
 
   return (
