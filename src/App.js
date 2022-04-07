@@ -10,9 +10,9 @@ function App() {
 
   // Add todo item
   const addTask = (userInput) => {
-    let copy = [...toDoList];
-    copy = [...copy, { id: toDoList.length + 1, task: userInput, complete: false }];
-    setToDoList(copy);
+    let copyTasks = [...toDoList];
+    copyTasks = [...copyTasks, { id: toDoList.length + 1, task: userInput, complete: false }];
+    setToDoList(copyTasks);
   };
 
   // Toggle todo item between complete and incomplete
@@ -26,11 +26,20 @@ function App() {
     setToDoList(updatedToggle);
   };
 
+  // Delete todo item
+  const handleDelete = (index) => {
+    const updatedDelete = [...toDoList];
+    console.log(index);
+    updatedDelete.splice(index, 1);
+    console.log(updatedDelete);
+    setToDoList(updatedDelete);
+  };
+
   return (
     <div className='app'>
       <FormHeader />
       <SubmitForm addTask={addTask} />
-      <TasksList toDoList={toDoList} handleToggle={handleToggle} />
+      <TasksList toDoList={toDoList} handleToggle={handleToggle} handleDelete={handleDelete} />
     </div>
   );
 }

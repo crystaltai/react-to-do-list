@@ -33,3 +33,11 @@
   cursor: pointer;
   margin-left: 15px;
 }
+
+.fa-circle-xmark:hover {
+  filter: brightness(95%);
+}
+
+.fa-circle-xmark:active {
+  filter: brightness(90%);
+}
