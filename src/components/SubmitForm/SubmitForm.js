@@ -14,7 +14,6 @@ const SubmitForm = ({ addTask }) => {
     e.preventDefault();
     if (userInput) {
       addTask(userInput);
-      // Reset userInput back to empty string
       setUserInput('');
     }
   };
