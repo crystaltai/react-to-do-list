@@ -6,7 +6,7 @@ const Task = ({ todo, handleToggle, handleDelete, index }) => {
       {/* Left side of task item */}
       <div
         className={`task-left ${todo.complete ? 'task-item-complete' : 'task-item-incomplete'}`}
-        onClick={() => handleToggle(todo.id)}
+        onClick={() => handleToggle(index)}
       >
         <div className='complete-button'>
           <i
