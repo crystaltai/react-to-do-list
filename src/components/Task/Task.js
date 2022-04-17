@@ -5,16 +5,16 @@ const Task = ({ todo, handleToggle, handleDelete, index }) => {
     <div className='task-item'>
       {/* Left side of task item */}
       <div
-        className={`task-left ${todo.complete ? 'task-item-complete' : 'task-item-incomplete'}`}
+        className={`task-left ${todo.completed ? 'task-item-complete' : 'task-item-incomplete'}`}
         onClick={() => handleToggle(index)}
       >
         <div className='complete-button'>
           <i
-            className={`${todo.complete ? 'fa-solid fa-circle-check' : 'fa-regular fa-circle'}`}
+            className={`${todo.completed ? 'fa-solid fa-circle-check' : 'fa-regular fa-circle'}`}
           ></i>
         </div>
         {/* Task name */}
-        <div>{todo.task}</div>
+        <div>{todo.title}</div>
       </div>
       {/* Right side of task item */}
       <div className='task-right'>

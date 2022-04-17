@@ -9,7 +9,7 @@ const TasksList = ({ toDoList, handleToggle, handleDelete }) => {
           <Task
             todo={todo}
             index={index}
-            key={todo.id + todo.task}
+            key={todo.id + todo.title}
             handleToggle={handleToggle}
             handleDelete={handleDelete}
           />
